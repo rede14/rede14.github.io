@@ -1,1 +1,166 @@
-arthurbentivenha/rede14.github.io
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Rede14 - Criação de Websites Profissionais</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Rede14 - Agência especializada na criação de websites profissionais, landing pages e lojas virtuais.">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: Arial, Helvetica, sans-serif; line-height: 1.6; color: #222; background: #f5f5f7; }
+    header { background: #111827; color: #fff; padding: 20px 40px; }
+    .header-container { max-width: 1100px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; }
+    .logo { font-size: 1.4rem; font-weight: 700; }
+    nav a { color: #e5e7eb; margin-left: 20px; text-decoration: none; font-size: 0.95rem; }
+    nav a:hover { color: #ffffff; }
+
+    .hero { background: #111827; color: #fff; padding: 60px 20px 80px; }
+    .hero-container { max-width: 1100px; margin: 0 auto; display: flex; flex-wrap: wrap; align-items: center; gap: 40px; }
+    .hero-text { flex: 1 1 280px; }
+    .hero-text h1 { font-size: 2.4rem; margin-bottom: 15px; }
+    .hero-text p { margin-bottom: 20px; font-size: 1rem; color: #d1d5db; }
+    .hero-highlights { margin-bottom: 20px; }
+    .hero-highlights li { margin-bottom: 6px; }
+    .cta-btn { background: #10b981; color: #fff; padding: 12px 26px; border-radius: 6px; border: none; cursor: pointer; font-size: 1rem; text-decoration: none; display: inline-block; }
+    .cta-btn:hover { background: #059669; }
+    .hero-form { flex: 1 1 260px; background: #ffffff; color: #111827; padding: 24px 22px; border-radius: 10px; box-shadow: 0 15px 35px rgba(0,0,0,0.25); }
+    .hero-form h2 { margin-bottom: 10px; font-size: 1.3rem; }
+    .hero-form p { margin-bottom: 16px; font-size: 0.9rem; color: #4b5563; }
+    .form-group { margin-bottom: 10px; }
+    label { display: block; font-size: 0.85rem; margin-bottom: 4px; }
+    input, textarea { width: 100%; padding: 8px 10px; border-radius: 4px; border: 1px solid #d1d5db; font-size: 0.9rem; }
+    textarea { resize: vertical; min-height: 70px; }
+    .form-small { font-size: 0.75rem; color: #6b7280; margin-top: 4px; }
+
+    .section { max-width: 1100px; margin: 40px auto; padding: 0 20px; }
+    .section h2 { font-size: 1.6rem; margin-bottom: 10px; }
+    .section p { margin-bottom: 10px; color: #4b5563; }
+    .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; margin-top: 15px; }
+    .card { background: #ffffff; border-radius: 8px; padding: 18px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+    .card h3 { margin-bottom: 8px; font-size: 1.1rem; }
+    .card p { font-size: 0.9rem; color: #4b5563; }
+
+    .footer { background: #020617; color: #9ca3af; padding: 20px; margin-top: 40px; }
+    .footer-container { max-width: 1100px; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 10px; font-size: 0.8rem; }
+    .footer a { color: #e5e7eb; text-decoration: none; }
+    .footer a:hover { text-decoration: underline; }
+
+    @media (max-width: 768px) {
+      header { padding: 16px 20px; }
+      .hero { padding: 40px 16px 60px; }
+      .hero-text h1 { font-size: 2rem; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="header-container">
+    <div class="logo">Rede14 • Websites Profissionais</div>
+    <nav>
+      <a href="#servicos">Serviços</a>
+      <a href="#portfolio">Portfólio</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-container">
+    <div class="hero-text">
+      <h1>Criação de Websites que Geram Resultados</h1>
+      <p>A Rede14 desenvolve sites rápidos, seguros e focados em conversão para pequenos negócios, profissionais autônomos e empresas que precisam se destacar no digital.</p>
+      <ul class="hero-highlights">
+        <li>Layouts personalizados e responsivos.</li>
+        <li>Integração com WhatsApp, redes sociais e formulários.</li>
+        <li>Otimização básica para mecanismos de busca (SEO on-page).</li>
+      </ul>
+      <a href="#contato" class="cta-btn">Solicitar orçamento</a>
+    </div>
+
+    <div class="hero-form" id="contato">
+      <h2>Receba uma proposta em até 24 horas</h2>
+      <p>Preencha o formulário e a equipe da Rede14 retornará com um plano sob medida para o seu projeto.</p>
+      <form action="#" method="post">
+        <div class="form-group">
+          <label for="nome">Nome completo</label>
+          <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+        </div>
+        <div class="form-group">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" placeholder="voce@exemplo.com" required>
+        </div>
+        <div class="form-group">
+          <label for="telefone">WhatsApp / Telefone</label>
+          <input type="tel" id="telefone" name="telefone" placeholder="(11) 99999-9999">
+        </div>
+        <div class="form-group">
+          <label for="tipo-site">Tipo de projeto</label>
+          <input type="text" id="tipo-site" name="tipo-site" placeholder="Institucional, landing page, loja virtual...">
+        </div>
+        <div class="form-group">
+          <label for="mensagem">Conte um pouco sobre o seu projeto</label>
+          <textarea id="mensagem" name="mensagem" placeholder="Descreva objetivos, prazo e referências."></textarea>
+        </div>
+        <div class="form-group">
+          <button type="submit" class="cta-btn" style="width: 100%;">Enviar informações</button>
+          <p class="form-small">
+            Ao enviar este formulário, você concorda com o tratamento dos seus dados para retorno do contato,
+            conforme a <a href="privacidade.html" target="_blank" rel="noopener noreferrer">Política de Privacidade</a>.
+          </p>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="servicos">
+  <h2>Serviços Rede14</h2>
+  <p>Os serviços foram pensados para cobrir desde a primeira presença online até projetos mais complexos, sempre com foco em desempenho, segurança e usabilidade.</p>
+  <div class="services-grid">
+    <div class="card">
+      <h3>Site Institucional</h3>
+      <p>Sites completos para apresentar sua empresa, serviços, depoimentos e canais de contato de forma profissional.</p>
+    </div>
+    <div class="card">
+      <h3>Landing Pages de Alta Conversão</h3>
+      <p>Páginas focadas em campanhas específicas, ideais para captação de leads ou venda de um único produto/serviço.</p>
+    </div>
+    <div class="card">
+      <h3>Lojas Virtuais</h3>
+      <p>Estrutura para vender online com catálogo, carrinho, meios de pagamento integrados e relatórios básicos.</p>
+    </div>
+    <div class="card">
+      <h3>Manutenção e Suporte</h3>
+      <p>Atualizações, correções, otimizações de velocidade e ajustes visuais contínuos para manter seu site saudável.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="portfolio">
+  <h2>Por que escolher a Rede14?</h2>
+  <p>Os projetos priorizam navegabilidade, clareza na comunicação e aderência às boas práticas de segurança, incluindo cuidados com dados pessoais dos visitantes.</p>
+  <ul>
+    <li>Atendimento próximo para entender o contexto do seu negócio.</li>
+    <li>Layout pensado primeiro para dispositivos móveis (mobile first).</li>
+    <li>Orientações básicas sobre conteúdo, SEO inicial e boas práticas de privacidade.</li>
+  </ul>
+</section>
+
+<footer class="footer">
+  <div class="footer-container">
+    <div>© <span id="ano-atual"></span> Rede14. Todos os direitos reservados.</div>
+    <div>
+      <a href="privacidade.html">Política de Privacidade</a>
+      &nbsp;•&nbsp;
+      <a href="#contato">Fale conosco</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('ano-atual').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
